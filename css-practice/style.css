@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.topbar {
+  background-color: aliceblue;
+  color: black;
+}
+.socials {
+  font-size: 20px;
+}
+.social {
+  padding-right: 150px;
+}
+.background {
+  background-image: url("https://cdn.pixabay.com/photo/2024/04/05/05/17/technology-8676538_1280.jpg");
+  height: 100vh;
+  width: 100%;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.h-10 {
+  height: 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  background-color: rgb(15, 14, 14);
+}
+.navbar ul li {
+  display: inline;
+  margin: 40px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+.navbar ul li a:hover {
+  color: rgb(182, 21, 21);
+}
+.button {
+  outline: none;
+  border: 3px dotted black;
+  background-color: orange;
+  padding: 15px;
+  border-radius: 20px;
+  margin-right: 150px;
+  color: black;
+}
+.section {
+  padding: 60px 0;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.features img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0px;
+}
+.icon-color {
+  color: orange;
+}
+.features h3 {
+  padding-top: 20px;
+}
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+textarea {
+  width: 100%;
+  padding: 32px 40px;
+  margin: 8px 0;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.email {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.form-send-button {
+  padding: 10px;
+  background-color: rgb(222, 90, 14);
+  color: white;
+  outline: none;
+  border: none;
+}
+.form-send-button:hover {
+  background-color: rgb(238, 194, 114);
+  color: black;
+}
+.contact-details h3 {
+  padding: 30px;
+}
+div .portfolios {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.portfolio-example img {
+  object-fit: contain;
+}
+.copyright {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.social-icons:hover {
+  cursor: pointer;
+  color: rgb(56, 183, 225);
+}
+
+@media (min-width: 278px) and (max-width: 490px) {
+  * {
+    overflow-x: hidden;
+  }
+ 
+  .background {
+    background-image: url(https://cdn.pixabay.com/photo/2024/04/05/05/17/technology-8676538_1280.jpg);
+    height: 100vh;
+    width: 1200px;
+    object-fit: contain;
+  }
+  .grid  {
+    display: flex;
+ flex-direction: column;
+    flex-wrap: wrap;
+    
+
+  }
+ 
+  .contact-section {
+    display: flex;
+
+    width: 850px;
+    flex-wrap: wrap;
+  }
+  .copyright {
+    width: 1200px;
+  }
+  .contact-form {
+    padding-bottom: 40px;
+  }
+  .map {
+    width: 969px;
+  }
+  .about-text {
+    width: 969px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .navbar img {
+    padding-bottom: 20px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .about-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 491px) and (max-width: 769px) {
+  * {
+    overflow-x: hidden;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar img {
+    background-position: center;
+  }
+  .navbar ul li {
+    display: inline;
+  }
+}
+@media (min-width: 770px) and (max-width: 1441px) {
+  .navbar img {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (min-width: 1442px) and (max-width: 2561px) {
+  .container {
+    max-width: 2400px;
+  }
+  
+}
